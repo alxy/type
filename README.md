@@ -13,7 +13,7 @@ echo $mynumber; // string(2) "42";
 $mystring = new \PerryFlynn\Type\String("Hello World");
 $mystring->Value = "My new String";
 $mystring->Value = 42; // UnexpectedValueException
-$mystring->Contains(" new"); // true
+var_dump($mystring->Contains(" new")); // true
 $myanotherstring = $mystring->Replace("new", "old"); // "My old String"
 ```
 
