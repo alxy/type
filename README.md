@@ -1,4 +1,4 @@
-PHP Typehinting without PECL SPL_Types Extension.
+PHP Typehinting without PECL SPL_Types Extension or any other thrid party extension.
 
 Basic usage
 -----------
@@ -50,9 +50,10 @@ Class structure
 ---------------
 
 * Type
+  * Bool
+  * Nullable
   * StringableType
     * Double
     * Float
     * Int
   * String
-  * Nullable
