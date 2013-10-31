@@ -68,9 +68,16 @@ Class structure
 
 * Type
   * Bool
+    - Equalable
+  * Double
+    - Stringable
+    - Comparable
+  * Float
+    - Stringable
+    - Comparable
+  * Int
+    - Stringable
+    - Comparable
   * Nullable
-  * StringableType
-    * Double
-    * Float
-    * Int
   * String
+    - Equalable
