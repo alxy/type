@@ -2,6 +2,12 @@
 
 namespace PerryFlynn\Type;
 
+
+/**
+ * Base class for all Types
+ * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt GPL v3
+ * @author Christian Blechert <christian@blechert.name>
+ */
 abstract class Type
 {
 

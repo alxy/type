@@ -4,6 +4,8 @@ namespace PerryFlynn\Type;
 
 /**
  * Typesafe float
+ * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt GPL v3
+ * @author Christian Blechert <christian@blechert.name>
  * @method void __construct(float $value) Create a float object
  * @property-write float $_ The float value
  */

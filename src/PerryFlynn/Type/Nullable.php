@@ -4,6 +4,8 @@ namespace PerryFlynn\Type;
 
 /**
  * Nullable type
+ * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt GPL v3
+ * @author Christian Blechert <christian@blechert.name>
  * @property-write Type $_ Nullable Type Object
  */
 class Nullable extends Type
