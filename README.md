@@ -67,17 +67,17 @@ Class structure
 ---------------
 
 * Type
-  * Bool
+  * `Bool`
     - Equalable
-  * Double
+  * `Double`
     - Stringable
     - Comparable
-  * Float
+  * `Float`
     - Stringable
     - Comparable
-  * Int
+  * `Int`
     - Stringable
     - Comparable
-  * Nullable
-  * String
+  * `Nullable`
+  * `String`
     - Equalable
