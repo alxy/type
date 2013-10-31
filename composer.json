@@ -1,20 +1,21 @@
 {
-   "minimum-stability": "dev",
-   "name": "perryflynn/type",
-   "description": "PHP Typehinting without PECL SPL_Types Extension or any other thrid party extension",
+	"name": "perryflynn/type",
+	"description": "PHP typehinting without PECL extension",
    "keywords": ["php", "typehinting"],
    "homepage": "https://github.com/perryflynn/type",
-   "license": "AGPL-3.0",
-   "authors": [
-      {
-         "name": "Christian Blechert",
-         "email": "christian@blechert.name"
-      }
-   ],
-   "require": {
-      "php": ">=5.4"
-   },
-   "autoload": {
-      "psr-0": { "PerryFlynn": "src/" }
-   },
+	"license": "AGPL-3.0+",
+	
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    
+    "config": {
+        "bin-dir": "bin/"
+    },
+    
+    "autoload": {
+        "psr-0": {
+        	"PerryFlynn": "src/"
+        }
+    }
 }

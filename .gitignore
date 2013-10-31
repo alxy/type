@@ -1,2 +1,6 @@
 /nbproject/
 test.php
+/.buildpath
+/.project
+/.settings
+/vendor
