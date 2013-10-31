@@ -5,12 +5,16 @@ namespace PerryFlynn\Type;
 /**
  * Typesafe string
  * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt AGPL v3
- * @author Christian Blechert <christian@blechert.name>
+ * @author Christian Blechert <git@anymail.net>
  * @method void __construct(string $value) Create a string object
  * @property-write string $_ The string value
  */
 class String extends Type
 {
+
+   use Ext\Stringable;
+   use Ext\Equalable;
+
 
    /**
     * Check value with is_string()
@@ -22,6 +26,7 @@ class String extends Type
       return is_string($value);
    }
 
+
    /**
     * Get value for object casting to string
     * @return string
@@ -30,6 +35,7 @@ class String extends Type
    {
       return $this->getValue();
    }
+
 
    /**
     * Length of value
@@ -40,6 +46,7 @@ class String extends Type
       return strlen($this->getValue());
    }
 
+
    /**
     * Is value empty
     * @return bool
@@ -48,6 +55,7 @@ class String extends Type
    {
       return ($this->length()<1);
    }
+
 
    /**
     * Contains value the given substring
@@ -59,6 +67,7 @@ class String extends Type
       return (strpos($this->getValue(), $substring->getValue())!==false);
    }
 
+
    /**
     * Replace a substring
     * @param \PerryFlynn\Type\String $search
@@ -69,7 +78,8 @@ class String extends Type
    {
       return new String(str_replace($search->getValue(), $replace->getValue(), $this->getValue()));
    }
-   
+
+
    /**
     * String in upper case characters
     * @return \PerryFlynn\Type\String
@@ -78,7 +88,8 @@ class String extends Type
    {
       return new String(strtoupper($this->getValue()));
    }
-   
+
+
    /**
     * String in lower case characters
     * @return \PerryFlynn\Type\String
@@ -87,5 +98,6 @@ class String extends Type
    {
       return new String(strtolower($this->getValue()));
    }
+
 
 }

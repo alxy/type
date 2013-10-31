@@ -5,7 +5,7 @@ namespace PerryFlynn\Type;
 /**
  * Nullable type
  * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt AGPL v3
- * @author Christian Blechert <christian@blechert.name>
+ * @author Christian Blechert <git@anymail.net>
  * @property-write Type $_ Nullable Type Object
  */
 class Nullable extends Type
@@ -16,9 +16,11 @@ class Nullable extends Type
     * @param double $value
     * @return bool
     */
-   public function isValid($value) {
+   public function isValid($value)
+   {
       return (($value instanceof $value || is_null($value)) && !($value instanceof Nullable));
    }
+
 
    /**
     * Check value for null
@@ -29,6 +31,7 @@ class Nullable extends Type
       return ($this->GetValue()!==null);
    }
 
+
    /**
     * Set Value to null
     */
@@ -36,5 +39,6 @@ class Nullable extends Type
    {
       $this->SetValue(null);
    }
+
 
 }

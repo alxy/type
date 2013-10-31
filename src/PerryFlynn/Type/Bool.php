@@ -5,24 +5,27 @@ namespace PerryFlynn\Type;
 /**
  * Typesafe bool
  * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt AGPL v3
- * @author Christian Blechert <christian@blechert.name>
+ * @author Christian Blechert <git@anymail.net>
  * @method void __construct(bool $value) Create a bool object
  * @property-write bool $_ The bool value
  */
 class Bool extends Type
 {
-   
+
+   use Ext\Equalable;
+
+
    /**
     * Check value with is_bool()
     * @param double $value
     * @return bool
     */
-   public function isValid($value) 
+   public function isValid($value)
    {
       return is_bool($value);
    }
-   
-   
+
+
    /**
     * Is the value true
     * @return bool
@@ -31,8 +34,8 @@ class Bool extends Type
    {
       return $this->getValue()===true;
    }
-   
-   
+
+
    /**
     * Is the value false
     * @return bool
@@ -41,16 +44,16 @@ class Bool extends Type
    {
       return $this->getValue()===false;
    }
-   
-   
+
+
    /**
     * Helper to cast the bool into a string
     * @return string
     */
-   public function toString() 
+   public function toString()
    {
       return ($this->getValue()===true ? "true" : "false");
    }
-   
-   
+
+
 }

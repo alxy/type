@@ -5,11 +5,12 @@ namespace PerryFlynn\Type\Ext;
 /**
  * Type can casted to a string
  * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt AGPL v3
- * @author Christian Blechert <christian@blechert.name>
+ * @author Christian Blechert <git@anymail.net>
  */
-trait StringableType
+trait Stringable
 {
-   
+
+
    /**
     * Cast the value to a string
     * @return string
@@ -17,5 +18,6 @@ trait StringableType
    public function toString() {
       return "".$this->GetValue();
    }
-   
+
+
 }
