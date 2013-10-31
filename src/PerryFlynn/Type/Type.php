@@ -39,6 +39,7 @@ abstract class Type
       return isset($this->$name);
    }
 
+   
    /**
     * Magic method for unset()
     * @link http://php.net/manual/en/language.oop5.magic.php Magic methods
@@ -49,6 +50,7 @@ abstract class Type
       throw new NotSupportedException("Unset not supported");
    }
 
+   
    /**
     * Magic method for getting a property
     * @link http://php.net/manual/en/language.oop5.magic.php Magic methods
@@ -64,6 +66,7 @@ abstract class Type
       return $this->getValue();
    }
 
+   
    /**
     * Magic method for setting a property
     * @link http://php.net/manual/en/language.oop5.magic.php Magic methods
@@ -80,6 +83,7 @@ abstract class Type
       $this->setValue($value);
    }
 
+   
    /**
     * Magic method to cast the object to a string
     * @link http://php.net/manual/en/language.oop5.magic.php Magic methods
@@ -90,6 +94,7 @@ abstract class Type
       return $this->ToString();
    }
 
+   
    /**
     * Get the objects value
     * @return mixed
@@ -99,6 +104,7 @@ abstract class Type
       return $this->value;
    }
 
+   
    /**
     * Set the objects value
     * @param mixed $value
@@ -117,6 +123,7 @@ abstract class Type
       $this->value = $value;
    }
 
+   
    /**
     * Cast the object to a string helper
     * @throws NotSupportedException
@@ -125,7 +132,8 @@ abstract class Type
    {
       throw new NotSupportedException("Type casting to string is not implemented");
    }
-
+   
+   
    /**
     * Must declared in each Type to validate the objects value
     * @param mixed $value
@@ -133,6 +141,6 @@ abstract class Type
     */
    abstract public function isValid($value);
 
+   
 }
 
-?>
