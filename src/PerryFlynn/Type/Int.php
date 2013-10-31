@@ -5,6 +5,7 @@ namespace PerryFlynn\Type;
 /**
  * Typesafe int
  * @method void __construct(int $value) Create a int object
+ * @property-write int $_ The int value
  */
 class Int extends StringableType
 {

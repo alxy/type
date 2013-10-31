@@ -5,6 +5,7 @@ namespace PerryFlynn\Type;
 /**
  * Typesafe string
  * @method void __construct(string $value) Create a string object
+ * @property-write string $_ The string value
  */
 class String extends Type
 {

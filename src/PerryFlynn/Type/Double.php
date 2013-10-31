@@ -5,6 +5,7 @@ namespace PerryFlynn\Type;
 /**
  * Typesafe double
  * @method void __construct(double $value) Create a double object
+ * @property-write double $_ The double value
  */
 class Double extends StringableType
 {

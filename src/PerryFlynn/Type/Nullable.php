@@ -4,6 +4,7 @@ namespace PerryFlynn\Type;
 
 /**
  * Nullable type
+ * @property-write Type $_ Nullable Type Object
  */
 class Nullable extends Type
 {

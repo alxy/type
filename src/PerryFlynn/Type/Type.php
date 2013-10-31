@@ -51,7 +51,7 @@ abstract class Type
     */
    function __get($name)
    {
-      if(strtolower($name)!="value")
+      if($name!="_")
       {
          throw new \BadMethodCallException();
       }
@@ -67,7 +67,7 @@ abstract class Type
     */
    function __set($name, $value)
    {
-      if(strtolower($name)!="value")
+      if($name!="_")
       {
          throw new \BadMethodCallException();
       }
