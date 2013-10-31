@@ -1,5 +1,22 @@
 PHP Typehinting without PECL SPL_Types Extension or any other thrid party extension.
 
+Installation via composer
+-------------------------
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/perryflynn/type"
+        }
+    ],
+    "require": {
+        "perryflynn/type": "*"
+    },
+    "minimum-stability": "dev"
+}
+```
+
 Basic usage
 -----------
 
