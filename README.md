@@ -43,7 +43,7 @@ function doAnything(String $mystring)
 }
 
 doAnything("Test"); // work
-doAnything(42); // Exception
+doAnything(42); // fatal error
 ```
 
 Class structure
