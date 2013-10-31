@@ -9,7 +9,7 @@ abstract class Type
 
    function __construct($value)
    {
-      $this->SetValue($value);
+      $this->setValue($value);
    }
 
    function __isset($name)
@@ -28,7 +28,7 @@ abstract class Type
       {
          throw new \BadMethodCallException();
       }
-      return $this->Value;
+      return $this->getValue();
    }
 
    function __set($name, $value)
@@ -37,7 +37,7 @@ abstract class Type
       {
          throw new \BadMethodCallException();
       }
-      $this->SetValue($value);
+      $this->setValue($value);
    }
 
    function __toString()
@@ -45,12 +45,12 @@ abstract class Type
       return $this->ToString();
    }
 
-   public function GetValue()
+   public function getValue()
    {
-      return $this->Value;
+      return $this->value;
    }
 
-   public function SetValue($value)
+   public function setValue($value)
    {
       if(is_null($value))
       {
@@ -60,10 +60,10 @@ abstract class Type
       {
          throw new \UnexpectedValueException("Unexpected value");
       }
-      $this->Value = $value;
+      $this->value = $value;
    }
 
-   public function ToString()
+   public function toString()
    {
       throw new NotSupportedException("Type casting to string is not implemented");
    }

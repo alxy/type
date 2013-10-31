@@ -10,29 +10,39 @@ class String extends Type
       return is_string($value);
    }
 
-   public function ToString()
+   public function toString()
    {
-      return $this->GetValue();
+      return $this->getValue();
    }
 
-   public function Length()
+   public function length()
    {
-      return strlen($this->GetValue());
+      return strlen($this->getValue());
    }
 
-   public function IsEmpty()
+   public function isEmpty()
    {
-      return ($this->Length()<1);
+      return ($this->length()<1);
    }
 
-   public function Contains(String $substring)
+   public function contains(String $substring)
    {
-      return (strpos($this->GetValue(), $substring->GetValue())!==false);
+      return (strpos($this->getValue(), $substring->getValue())!==false);
    }
 
-   public function Replace(String $search, String $replace)
+   public function replace(String $search, String $replace)
    {
-      return new String(str_replace($search->GetValue(), $replace->GetValue(), $this->GetValue()));
+      return new String(str_replace($search->getValue(), $replace->getValue(), $this->getValue()));
+   }
+   
+   public function toUpper()
+   {
+      return new String(strtoupper($this->getValue()));
+   }
+   
+   public function toLower()
+   {
+      return new String(strtolower($this->getValue()));
    }
 
 }

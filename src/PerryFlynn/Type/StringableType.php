@@ -5,7 +5,7 @@ namespace PerryFlynn\Type;
 abstract class StringableType extends Type
 {
    
-   public function ToString() {
+   public function toString() {
       return "".$this->GetValue();
    }
    

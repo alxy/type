@@ -9,12 +9,12 @@ class Nullable extends Type
       return (($value instanceof $value || is_null($value)) && !($value instanceof Nullable));
    }
 
-   public function HasValue()
+   public function hasValue()
    {
       return ($this->GetValue()===null);
    }
 
-   public function SetNull()
+   public function setNull()
    {
       $this->SetValue(null);
    }
