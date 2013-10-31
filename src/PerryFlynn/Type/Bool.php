@@ -4,7 +4,7 @@ namespace PerryFlynn\Type;
 
 /**
  * Typesafe bool
- * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt GPL v3
+ * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt AGPL v3
  * @author Christian Blechert <christian@blechert.name>
  * @method void __construct(bool $value) Create a bool object
  * @property-write bool $_ The bool value

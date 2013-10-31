@@ -4,7 +4,7 @@ namespace PerryFlynn\Type;
 
 /**
  * Type can casted to a string
- * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt GPL v3
+ * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt AGPL v3
  * @author Christian Blechert <christian@blechert.name>
  */
 abstract class StringableType extends Type

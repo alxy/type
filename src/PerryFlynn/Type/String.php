@@ -4,7 +4,7 @@ namespace PerryFlynn\Type;
 
 /**
  * Typesafe string
- * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt GPL v3
+ * @license https://github.com/perryflynn/type/blob/master/LICENSE.txt AGPL v3
  * @author Christian Blechert <christian@blechert.name>
  * @method void __construct(string $value) Create a string object
  * @property-write string $_ The string value
