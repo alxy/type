@@ -7,7 +7,7 @@ Installation via composer
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/perryflynn/type"
+            "url": "https://github.com/phpscalars/phpscalars"
         }
     ],
     "require": {
